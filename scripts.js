@@ -1,11 +1,3 @@
-/* eslint-disable class-methods-use-this */
-/* eslint-disable array-callback-return */
-/* eslint-disable no-plusplus */
-/* eslint-disable max-len */
-/* eslint-disable no-use-before-define */
-/* eslint-disable max-classes-per-file */
-/* eslint-disable no-undef */
-
 // defining DOM structure
 
 const renderbasicDOM = () => {
@@ -167,7 +159,6 @@ class ShiftKey extends SpecialKey {
 
   onClickAction() {
     this.animate();
-    debugger;
     keys.map((key) => {
       if (typeof key.shift === 'function') key.shift();
     });
